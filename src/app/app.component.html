@@ -25,7 +25,7 @@
     <input class="ml-1" type="checkbox" (change)="onChangeUseSymbols()" />
   </div>
 
-  <div class="mt-4">
+  <div class="mt-5">
     <button
       class="disabled:bg-red-300 bg-red-800 text-white px-4 py-2"
       [disabled]="
@@ -37,7 +37,7 @@
     </button>
   </div>
 
-  <div class="mt-4">
+  <div class="mt-4" *ngIf="password">
     <label>Your Generated Password</label>
     <input
       class="border w-full border-black py-1 px-1"
